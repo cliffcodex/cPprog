@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.west.cstack"
+    namespace = "com.west.%"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.west.cstack"
+        applicationId = "com.west.%"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
