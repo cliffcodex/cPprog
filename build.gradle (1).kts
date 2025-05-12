@@ -76,60 +76,16 @@ dependencies {
 
     // Navigation for Jetpack Compose
     implementation("androidx.navigation:navigation-compose:2.9.0")
-    // Navigation Compose library for navigation
-    implementation("androidx.navigation:navigation-compose:2.9.0")
-    // Navigation Compose library for navigation
-    implementation("androidx.navigation:navigation-compose:2.9.0")
-    implementation("androidx.navigation:navigation-compose:2.9.0")
-    implementation("androidx.compose.ui:ui:1.8.1") // Use a compatible version
-    dependencies {
-        implementation("androidx.compose.ui:ui:1.8.1")
-        implementation("androidx.compose.material3:material3:1.3.2")
-        implementation("androidx.compose.ui:ui-tooling-preview:1.8.1")
-        implementation("androidx.activity:activity-compose:1.10.1")
-        implementation("androidx.navigation:navigation-compose:2.9.0") // for Navigation
-        implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0") // for LiveData
-        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0") // for ViewModel integration with Compose
-        debugImplementation("androidx.compose.ui:ui-tooling:1.8.1")
 
-        // Jetpack Compose dependencies
-        implementation("androidx.compose.ui:ui:1.8.1")
-        implementation("androidx.compose.material3:material3:1.1.2")
-        implementation("androidx.activity:activity-compose:1.10.1")
-        implementation("androidx.navigation:navigation-compose:2.9.0") // for navigation
-        debugImplementation("androidx.compose.ui:ui-tooling:1.8.1")
+    // Lifecycle dependencies (LiveData and ViewModel)
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0")
 
-        // LiveData and ViewModel dependencies
-        implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0") // for LiveData
-        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0") // for ViewModel integration with Compose
+    // Optional testing dependencies
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.3")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
-        // Jetpack Compose dependencies
-        implementation("androidx.compose.ui:ui:1.8.1")
-        implementation("androidx.compose.material3:material3:1.3.2")
-        implementation("androidx.activity:activity-compose:1.10.1")
-        implementation("androidx.navigation:navigation-compose:2.9.0") // for navigation
-        debugImplementation("androidx.compose.ui:ui-tooling:1.8.1")
-
-        // Lifecycle dependencies (LiveData and ViewModel)
-        implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0") // for LiveData
-        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0") // for ViewModel integration with Compose
-
-        // Optional testing dependencies
-        testImplementation("junit:junit:4.13.2")
-        androidTestImplementation("androidx.test.ext:junit:1.1.3")
-        androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-        implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
-        implementation("androidx.compose.material3:material3:1.3.2")
-
-        // Optional testing dependencies
-        testImplementation(libs.junit)
-        androidTestImplementation(libs.androidx.junit)
-        androidTestImplementation(libs.androidx.espresso.core)
-
-    }
-
-    // Test dependencies
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    // Optional: Jetpack Compose runtime with LiveData
+    implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
 }
