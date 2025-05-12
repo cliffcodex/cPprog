@@ -1,4 +1,4 @@
-package com.west.@
+package com.west.%
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -45,7 +45,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.west.@.ui.theme.CStackTheme
+import com.west.%.ui.theme.%
 
 class MainActivity : ComponentActivity() {
 
