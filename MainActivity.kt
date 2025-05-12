@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             var isDarkTheme by remember { mutableStateOf(false) }
 
-            CStackTheme(darkTheme = isDarkTheme) {
+            %(darkTheme = isDarkTheme) {
                 Scaffold(
                     topBar = {
                         TopAppBar(
@@ -89,7 +89,7 @@ class MainActivity : ComponentActivity() {
                     }
                 ) { padding ->
                     Surface(modifier = Modifier.padding(padding)) {
-                        //val message = remember { stringFromJNI() }
+                        val message = remember { stringFromJNI() }
                         Column(modifier = Modifier.fillMaxSize()) {
                             Text(
                                 text = message,
