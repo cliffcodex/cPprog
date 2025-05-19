@@ -16,7 +16,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.west.west.ui.theme.TestTheme
+import com.west.test.ui.theme.TestTheme
+import com.west.test.ui.theme.TestTheme
 
 class MainActivity : ComponentActivity() {
 
