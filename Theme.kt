@@ -1,5 +1,6 @@
 package com.west.%.ui.theme
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
@@ -19,7 +20,7 @@ private val LightColors = lightColorScheme(
 
 @Composable
 fun %(
-    darkTheme: Boolean = false,
+    darkTheme: Boolean = isSystemInDarkTheme(), // ✅ Use system setting
     content: @Composable () -> Unit
 ) {
     val colors = if (darkTheme) DarkColors else LightColors
