@@ -79,6 +79,9 @@ dependencies {
     // Navigation for Jetpack Compose
     implementation("androidx.navigation:navigation-compose:2.9.0")
 
+    // Preferences DataStore
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
+
     // Lifecycle dependencies (LiveData and ViewModel)
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.0")
