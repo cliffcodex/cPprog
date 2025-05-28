@@ -73,7 +73,6 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.10.1") // ✅ Add this line
     implementation("androidx.compose.ui:ui:1.8.2")
     implementation("androidx.compose.ui:ui-tooling-preview:1.8.2")
-    implementation(libs.androidx.material3.android)
     debugImplementation("androidx.compose.ui:ui-tooling:1.8.2")
 
     // Navigation for Jetpack Compose
