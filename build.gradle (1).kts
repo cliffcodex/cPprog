@@ -1,3 +1,4 @@
+import org.gradle.kotlin.dsl.implementation
 
 plugins {
     alias(libs.plugins.android.application)
@@ -69,18 +70,14 @@ dependencies {
 
     // Jetpack Compose dependencies
     implementation("androidx.activity:activity-compose:1.10.1")
-    implementation("androidx.activity:activity-ktx:1.8.0") // ✅ Add this line
-    implementation("androidx.compose.ui:ui:1.8.1")
-    implementation("androidx.compose.material3:material3:1.3.2")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.8.1")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.8.1")
-    implementation ("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.activity:activity-ktx:1.10.1") // ✅ Add this line
+    implementation("androidx.compose.ui:ui:1.8.2")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.8.2")
+    implementation(libs.androidx.material3.android)
+    debugImplementation("androidx.compose.ui:ui-tooling:1.8.2")
 
     // Navigation for Jetpack Compose
     implementation("androidx.navigation:navigation-compose:2.9.0")
-
-    // Preferences DataStore
-    implementation ("androidx.datastore:datastore-preferences:1.0.0")
 
     // Lifecycle dependencies (LiveData and ViewModel)
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0")
@@ -92,5 +89,26 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
     // Optional: Jetpack Compose runtime with LiveData
-    implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
+    implementation("androidx.compose.runtime:runtime-livedata:1.8.2")
+
+    // Preferences DataStore
+    implementation ("androidx.datastore:datastore-preferences:1.1.7")
+
+    //Json
+    implementation ("com.google.code.gson:gson:2.11.0")
+
+    // Google Font
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.8.2")
+
+    //BoxWithConstraints
+    implementation ("androidx.compose.ui:ui:1.8.2")
+    implementation ("androidx.compose.foundation:foundation-layout:1.8.2")
+
+    // scrollable row with a circular indicator
+    implementation("androidx.compose.material3:material3:1.3.2")
+    implementation ("androidx.compose.foundation:foundation:1.8.2")
+
+    //Google Pager
+    implementation ("com.google.accompanist:accompanist-pager:0.30.1")
+
 }
