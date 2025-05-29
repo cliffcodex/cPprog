@@ -73,6 +73,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.10.1") // ✅ Add this line
     implementation("androidx.compose.ui:ui:1.8.2")
     implementation("androidx.compose.ui:ui-tooling-preview:1.8.2")
+    implementation(libs.androidx.material3.android)
     debugImplementation("androidx.compose.ui:ui-tooling:1.8.2")
 
     // Navigation for Jetpack Compose
@@ -109,5 +110,15 @@ dependencies {
 
     //Google Pager
     implementation ("com.google.accompanist:accompanist-pager:0.30.1")
+
+    // Jetpack ViewModel
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7" +
+            ".0")
+
+    // Kotlin coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // If using StateFlow and Compose together
+    implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.9.0")
 
 }
