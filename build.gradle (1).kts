@@ -120,4 +120,13 @@ dependencies {
     // If using StateFlow and Compose together
     implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.9.0")
 
+     // Core Retrofit library for making network API calls
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Gson converter for converting JSON to Kotlin data classes and vice versa
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // (Optional) OkHttp logging interceptor to log network requests/responses — useful for debugging
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
 }
