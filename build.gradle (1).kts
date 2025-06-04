@@ -129,4 +129,7 @@ dependencies {
     // (Optional) OkHttp logging interceptor to log network requests/responses — useful for debugging
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
+    // Jetpack DataStore for storing key-value pairs (replacement for SharedPreferences)
+    implementation ("androidx.datastore:datastore-preferences:1.1.7")
+
 }
